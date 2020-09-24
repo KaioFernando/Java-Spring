@@ -1,4 +1,4 @@
-package br.com.alura.mvc.mudi.controller;
+package br.com.kaio.mvc.mudi.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import br.com.alura.mvc.mudi.model.Pedido;
-import br.com.alura.mvc.mudi.model.StatusPedido;
-import br.com.alura.mvc.mudi.repository.PedidoRepository;
+import br.com.kaio.mvc.mudi.model.Pedido;
+import br.com.kaio.mvc.mudi.model.StatusPedido;
+import br.com.kaio.mvc.mudi.repository.PedidoRepository;
 
 import java.util.List;
 

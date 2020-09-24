@@ -1,4 +1,4 @@
-package br.com.alura.mvc.mudi;
+package br.com.kaio.mvc.mudi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,4 +1,4 @@
-package br.com.alura.mvc.mudi;
+package br.com.kaio.mvc.mudi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

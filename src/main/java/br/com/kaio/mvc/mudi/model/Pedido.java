@@ -1,4 +1,4 @@
-package br.com.alura.mvc.mudi.model;
+package br.com.kaio.mvc.mudi.model;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

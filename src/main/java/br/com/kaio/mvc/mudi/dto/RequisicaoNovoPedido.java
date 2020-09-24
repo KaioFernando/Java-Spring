@@ -1,9 +1,9 @@
-package br.com.alura.mvc.mudi.dto;
+package br.com.kaio.mvc.mudi.dto;
 
 import javax.validation.constraints.NotBlank;
 
-import br.com.alura.mvc.mudi.model.Pedido;
-import br.com.alura.mvc.mudi.model.StatusPedido;
+import br.com.kaio.mvc.mudi.model.Pedido;
+import br.com.kaio.mvc.mudi.model.StatusPedido;
 
 public class RequisicaoNovoPedido {
 

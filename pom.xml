@@ -9,11 +9,11 @@
 		<version>2.2.2.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>br.com.alura.mvc</groupId>
+	<groupId>br.com.kaio.mvc</groupId>
 	<artifactId>mudi</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>mudi</name>
-	<description>Projeto Spring MVC da Alura</description>
+	<description>Projeto Spring MVC</description>
 
 	<properties>
 		<java.version>1.8</java.version>
