@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import br.com.kaio.mvc.mudi.model.Pedido;
-import br.com.kaio.mvc.mudi.model.StatusPedido;
+import br.com.kaio.mvc.mudi.model.StatusPedidoType;
 import br.com.kaio.mvc.mudi.repository.PedidoRepository;
 
 import java.util.List;
@@ -30,7 +30,7 @@ public class HomeController {
 	
 	@GetMapping("/{status}")
 	public String porStatus(@PathVariable("status") String status, Model model) {		
-		List<Pedido> pedidos = pedidoRepository.findByStatus(StatusPedido.valueOf(status.toUpperCase()));
+		List<Pedido> pedidos = pedidoRepository.findByStatus(StatusPedidoType.valueOf(status.toUpperCase()));
 		model.addAttribute("pedidos", pedidos);	
 		model.addAttribute("status", status);
 		return "home";

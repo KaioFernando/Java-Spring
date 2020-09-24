@@ -1,5 +1,5 @@
 package br.com.kaio.mvc.mudi.model;
 
-public enum StatusPedido {
+public enum StatusPedidoType {
 	AGUARDANDO, APROVADO, ENTREGUE;
 }

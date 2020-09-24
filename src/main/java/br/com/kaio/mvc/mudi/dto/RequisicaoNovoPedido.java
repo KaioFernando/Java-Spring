@@ -3,7 +3,7 @@ package br.com.kaio.mvc.mudi.dto;
 import javax.validation.constraints.NotBlank;
 
 import br.com.kaio.mvc.mudi.model.Pedido;
-import br.com.kaio.mvc.mudi.model.StatusPedido;
+import br.com.kaio.mvc.mudi.model.StatusPedidoType;
 
 public class RequisicaoNovoPedido {
 
@@ -47,7 +47,7 @@ public class RequisicaoNovoPedido {
 		pedido.setNomeProduto(nomeProduto);
 		pedido.setUrlImagem(urlImagem);
 		pedido.setUrlProduto(urlProduto);
-		pedido.setStatus(StatusPedido.AGUARDANDO);
+		pedido.setStatus(StatusPedidoType.AGUARDANDO);
 		return pedido;
 	}
 	

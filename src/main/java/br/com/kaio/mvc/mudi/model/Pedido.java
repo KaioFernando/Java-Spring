@@ -24,7 +24,7 @@ public class Pedido {
 	private String descricao;
 	
 	@Enumerated(EnumType.STRING)
-	private StatusPedido status;
+	private StatusPedidoType status;
 	
 	public String getNomeProduto() {
 		return nomeProduto;
@@ -68,10 +68,10 @@ public class Pedido {
 	public void setId(long id) {
 		this.id = id;
 	}
-	public StatusPedido getStatus() {
+	public StatusPedidoType getStatus() {
 		return status;
 	}
-	public void setStatus(StatusPedido status) {
+	public void setStatus(StatusPedidoType status) {
 		this.status = status;
 	}
 	
