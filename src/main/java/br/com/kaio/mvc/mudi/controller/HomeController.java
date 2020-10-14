@@ -12,6 +12,7 @@ import br.com.kaio.mvc.mudi.model.Pedido;
 import br.com.kaio.mvc.mudi.model.StatusPedidoType;
 import br.com.kaio.mvc.mudi.repository.PedidoRepository;
 
+import java.security.Principal;
 import java.util.List;
 
 @Controller
@@ -22,8 +23,8 @@ public class HomeController {
 	private PedidoRepository pedidoRepository;
 	
 	@GetMapping
-	public String home(Model model) {		
-		List<Pedido> pedidos = pedidoRepository.findAll();
+	public String home(Model model, Principal principal) {
+		List<Pedido> pedidos = pedidoRepository.findAllByUsuario(principal.getName());
 		model.addAttribute("pedidos", pedidos);	
 		return "home";
 	}
