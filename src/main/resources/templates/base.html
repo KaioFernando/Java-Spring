@@ -1,8 +1,8 @@
 <head th:fragment="head">
-		<meta charset="UTF-8"/>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-		<link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
-		<style>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+	<style>
 			.Logo-container {
 				background-color: #47bcff;
 				color:#FFF;
@@ -14,10 +14,14 @@
 			}
 		</style>
 </head>
-	
+
 <div th:fragment="Logo" class="Logo-container mb-3 p-3 d-flex justify-content-between">
 	<span class="logo">mudi</span>
-	<span class="mt-3">Login</span>
+	<span class="mt-3">
+		<a class="text-light" sec:authorize="!isAuthenticated()" href="/Login">Login</a>
+		<a onclick="document.querySelector('#form-login').submit()" class="text-light" sec:authorize="isAuthenticated()" href="#">Logout</a>
+		<form id="form-login" th:action="@{/logout}" method="post"></form>
+	</span>
 </div>
 
 <div th:fragment="titulo(valor)" class="jumbotron mb-0">
